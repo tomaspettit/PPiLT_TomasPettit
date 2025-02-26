@@ -1,0 +1,7 @@
+{
+  "name": "myTechApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
