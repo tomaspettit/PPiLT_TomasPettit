@@ -1,0 +1,44 @@
+  /* Sign Up Form Styles */
+  .formStyle{
+    width: 350px;
+    margin-left: 35px;
+  }
+
+  /* Textarea Address Style */
+  #addressStyle{
+    width: 350px;
+    font-size: 25px;
+    background: #db5b0cfd;
+    border-radius: 34px;
+    margin-top: 50px;
+    padding: 20px;
+    background: linear-gradient(
+      0deg, 
+      rgb(121, 208, 249) 0%, 
+      rgba(115, 232, 179, 0.5) 100%
+      );
+      box-shadow: 10px 4px 4px rgb(0, 0, 0, 0.25);
+  }
+
+  /* Sign Up Button Style */
+  #signUpButton{
+    --background: blue;
+    margin-top: 25px;
+    margin-left: 85px;
+    width:250px;
+    height: auto;
+    font-size: 25px;
+    text-align: center;
+    --background-activated: white;
+    --color-activated: blue;
+  }
+
+  /* Input Style */
+  ion-input{
+    font-size: 25px;
+  }
+
+  /* Textarea Style */
+  ion-textarea{
+    font-size: 20px;
+  }

@@ -1,0 +1,56 @@
+/* Back Button Style */
+#backBtn{
+    width: 165px;
+    height:60px;
+    font-size: 25px;
+    --color: black;
+    --background: white;
+    --background-activated: blue;
+    --color-activated: white;
+}
+
+/* Order Button Style */
+#orderBtn{
+    width: 165px;
+    height:60px;
+    font-size: 25px;
+    margin-left: 25px;
+    --color: white;
+    --background: blue;
+    --background-activated: white;
+    --color-activated: blue;
+}
+
+/* Card No. Input Style */
+.cardNoInput{
+    width:350px;
+    margin-left: 30px;
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+/* Expiry Date Input Style */
+.expiryDateInput{
+    width: 165px;
+    margin-left: 30px;
+    font-size: 25px;
+}
+
+/* CVV Input Style */
+.CVVInput{
+    width: 165px;
+    margin-top: -80px;
+    margin-left: 215px;
+    font-size: 25px;
+}
+
+/* Input Style */
+ion-input{
+    height: 80px;
+    padding-top: 50px;
+}
+
+/* Button with Icons Style */
+.buttonWithIcon{
+    margin-left: -40px;
+}

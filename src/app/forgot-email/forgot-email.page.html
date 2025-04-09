@@ -1,0 +1,45 @@
+<ion-content [fullscreen]="true">
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title size="large"><img src="assets/ORE_SVG_Toolbar.svg" width="350" height="125" class="logo_ORE" [routerLink]="['/home']"/></ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- Forgot Email Form -->
+  <div (change)="onInputChangedForFE()">
+    <h1 style="text-align: center;">Forgot Email</h1>
+
+    <!-- New Email -->
+    <ion-input label="New Email" type="email" [(ngModel)]="newEmail" label-placement="floating" fill="outline" placeholder="Enter your new Email" class="feInput"></ion-input>
+    
+    <!-- Password -->
+    <ion-input label="Password" type="password" [(ngModel)]="password" label-placement="floating" fill="outline" placeholder="Enter your password" class="feInput"
+    [counter]="true" maxlength="20"></ion-input>
+    
+    <!-- Confirm Password-->
+    <ion-input label="Confirm Password" type="password" [(ngModel)]="confirmPassword" label-placement="floating" fill="outline" placeholder="Enter your confirm password" class="feInput"
+    [counter]="true" maxlength="20"></ion-input>
+  </div>
+
+  <div class="feBackgroundStyle" style="margin-bottom: 25px;">
+
+    <!-- Sign Up Button (Forgot Email) -->
+    <ion-button [disabled]="disabledSignUpBtn" (click)="forgotEmailSubmit()" shape="round" id="loginBtn">
+      <ion-icon name="log-in-outline" style="margin-left: -100px;"></ion-icon>
+      Sign Up
+    </ion-button><br><br><br>
+
+    <!-- Forgot Password Link => navigate to '/forgot-password' page -->
+    <div>
+      <a [routerLink]="['/forgot-password']" id="forgotPasswordLink">Forgot Password</a><br><br>
+    </div>
+
+    <!-- Register Button -->
+    <ion-button [routerLink]="['/signup']" id="registerBtn" shape="round">
+      <ion-icon name="person-outline" slot="start" style="margin-left: -80px;" class="buttonWithIcon"></ion-icon>
+      Register
+    </ion-button>
+  </div>
+
+</ion-content>
+

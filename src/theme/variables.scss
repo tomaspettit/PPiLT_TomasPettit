@@ -1,2 +1,133 @@
 // For information on how to create your own theme, please see:
 // http://ionicframework.com/docs/theming/
+
+
+/* ion-content::part(background) Style */
+ion-content::part(background) {
+  background: linear-gradient(
+  180deg, 
+  rgba(93, 172, 251, 1.0) 0%, 
+  rgba(93, 172, 251, 0.8) 25%, 
+  rgba(93, 172, 251, 0.6) 50%, 
+  rgba(93, 172, 251, 0.4) 75%, 
+  rgba(93, 172, 251, 0.2) 100%
+  );
+}
+
+/* ion-icon Style */
+ion-icon{
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    margin-left: 45px;
+  }
+
+/* Button With Icons */
+.buttonWithIcon{
+    width: 35px;
+    height: 35px;
+    padding: 20px;
+    margin-left: 45px;
+}
+
+/* Toolbar Style */
+ion-toolbar{
+  --background: #000092;
+}
+
+/* Textarea Style */
+ion-textarea{
+  box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Input Style */
+ion-input{
+    background: linear-gradient(
+      0deg, 
+      rgb(121, 208, 249) 0%, 
+      rgba(115, 232, 179, 0.5) 100%
+      );
+    border-radius: 34px;
+    text-indent: 25px;
+    width: 200px;
+    height: 50px;
+    margin-top: 40px;
+    box-shadow: 10px 4px 4px rgb(0, 0, 0, 0.25);
+    font-size: 30px;
+}
+
+h1{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Button Style */
+ion-button{
+  --box-shadow: 10px -5px 15px rgb(0, 0, 0, 0.25);
+  --border-color: black;
+  --border-style: solid;
+}
+
+/* Image of ORE logo Style */
+.logo_ORE{
+  margin-left: 30px;
+}
+
+/* Contact Footer Style */
+#bottomStyle{
+  color: white;
+  width: auto;
+  height: auto;
+  bottom: 0;
+  font-size: 24px;
+  padding: 10px;
+  background:linear-gradient(180deg, 
+  rgba(255, 192, 203, 100%) 0%, 
+  rgba(0, 0, 255, 67%) 50%,
+  rgba(255, 255, 255, 33%) 100%,
+  );
+}
+
+/* Login Button Style */
+#loginBtn{
+  margin-left: 20px;
+  width: 300px;
+  height: 50px;
+  --background: blue;
+  margin-top: 10px;
+  text-indent: 10px;
+  font-size: 25px;
+  --background-activated: white;
+  --color-activated: blue;
+}
+
+/* Register Button Style */
+#registerBtn{
+  margin-left: 20px;
+  width: 300px;
+  height: 50px;
+  --background: white;
+  --color: black;
+  margin-top: 20px;
+  text-indent: 10px;
+  font-size: 25px;
+  --background-activated: blue;
+  --color-activated: white;
+}
+
+/* Toast Style */
+ion-toast {
+  --background: #7777F3;
+  --box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.2);
+  --color: #4b4a50;
+  font-size: 20px;
+}
+
+ion-toast::part(message) {
+  font-style: italic;
+  color: white;
+}
+
+ion-toast::part(button) {
+  border-left: 1px solid #070bea;
+  font-size: 15px;
+}

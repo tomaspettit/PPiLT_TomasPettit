@@ -1,0 +1,48 @@
+/* Login Input Style */
+.loginInput{
+    margin-left: 32px;
+    margin-top: 70px;
+    width: 360px;
+    height: 75px;
+    font-size: 25px;
+  }
+
+  /* Login Background (Two Buttons) Style */
+  .loginBackgroundStyle{
+    background: linear-gradient(
+      180deg, 
+      rgb(0, 0, 255) 0%, 
+      rgb(255, 255, 255) 100%
+      );
+    margin-top: 25px;
+    border-radius: 15px;  
+    height:auto;
+    width: 360px;
+    margin-left: 35px;
+    box-shadow: 5px -10px 0px rgb(0, 0, 0, 0.25);
+    padding: 15px;
+  }
+
+  /* Link Visited Style */
+  a:visited{
+    color:white;
+  }
+
+  /* Link Active Style */
+  a:active{
+    color: lightblue;
+  }
+
+  /* Forgot Email Link Style */
+  .styleLink{
+    margin-left: 50px;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  /* Forgot Password Link Style */
+  .styleLink2{
+    margin-left: 50px;
+    text-decoration: none;
+    font-size: 15px;
+  }

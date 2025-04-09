@@ -1,0 +1,50 @@
+<ion-content [fullscreen]="true">
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <!-- Navigate back to the home page -->
+      <ion-title size="large">
+        <img src="assets/ORE_SVG_Toolbar.svg" width="350" height="125" class="logo_ORE" [routerLink]="['/home']"/>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- Sign Up Form -->
+  <div (change)="onInputChanged()" class="formStyle">
+    <h1 style="text-align: center;">Sign Up</h1>
+
+    <!-- Name -->
+    <ion-input placeholder="Name" type="text" [(ngModel)]="name"></ion-input>
+
+    <!-- Email -->
+    <ion-input placeholder="Email" type="email" [(ngModel)]="email"></ion-input>
+
+    <!-- Password -->
+    <ion-input placeholder="Password" type="password" [(ngModel)]="password" [counter]="true" maxlength="20"></ion-input>
+
+    <!-- Date of Birth -->
+    <ion-input placeholder="Date of Birth" type="date" [(ngModel)]="dob"></ion-input>
+
+    <!-- Phone Number -->
+    <ion-input placeholder="Phone Number" type="tel" [(ngModel)]="phone"></ion-input>
+
+    <!-- Address -->
+    <ion-textarea id="addressStyle" placeholder="Address" type="text" [(ngModel)]="address"
+    [autoGrow]="true" [clearOnEdit]="true"></ion-textarea>
+
+    <!-- Eircode -->
+    <ion-input placeholder="Eircode" type="text" [(ngModel)]="eircode"></ion-input>
+  </div>
+
+    <!-- Sign Up Button -->
+    <ion-button [disabled]="signUpDisabled" (click)="onSignUp()" id="signUpButton" shape="round">
+      <ion-icon name="person-outline" style="margin-left: -50px;" slot="start" class="buttonWithIcon"></ion-icon>
+      Sign Up
+    </ion-button>
+
+    <p style="text-align: center;">Already have an account? 
+      <!-- Navigate to Login if you already have your account -->
+      <a [routerLink]="['/login']" style="text-decoration: none;">Log In</a>
+    </p>
+  
+
+</ion-content>

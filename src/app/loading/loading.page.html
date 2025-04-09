@@ -1,0 +1,56 @@
+<ion-content>
+  <div class="container">
+    
+    <!-- Top Eclipse -->
+    <svg height="100" width="500" xmlns="http://www.w3.org/2000/svg" class="top-eclipse">
+      <defs>
+        <radialGradient id="grad1" cx="50%" cy="50%" r="75%" fx="50%" fy="50%">
+          <stop offset="13%" stop-color="rgba(255, 255, 255, 0%)"/>
+          <stop offset="100%" stop-color="rgba(0, 0, 255, 50%)" />
+        </radialGradient>
+      </defs>
+      <ellipse cx="250" cy="0" rx="250" ry="50" fill="url(#grad1)" />
+    </svg>
+
+    <!-- Left Eclipse -->
+    <svg height="1000" width="100" xmlns="http://www.w3.org/2000/svg" class="left-eclipse">
+      <defs>
+        <radialGradient id="grad2" cx="50%" cy="50%" r="75%" fx="50%" fy="50%">
+          <stop offset="13%" stop-color="rgba(255, 255, 255, 0%)"/>
+          <stop offset="100%" stop-color="rgba(0, 0, 255, 50%)" />
+        </radialGradient>
+      </defs>
+      <ellipse cx="0" cy="500" rx="40" ry="466" fill="url(#grad2)" />
+    </svg>
+
+    <!-- Center Content -->
+    <div class="center-content">
+      <img src="assets/ORE_SVG_Loading.svg" alt="Loading" width="350" height="400"/><br />
+      <ion-progress-bar [value]="progress" color="tertiary"></ion-progress-bar>
+    </div>
+
+    <!-- Right Eclipse -->
+    <svg height="1000" width="100" xmlns="http://www.w3.org/2000/svg" class="right-eclipse">
+      <defs>
+        <radialGradient id="grad3" cx="50%" cy="50%" r="75%" fx="50%" fy="50%">
+          <stop offset="13%" stop-color="rgba(255, 255, 255, 0%)"/>
+          <stop offset="100%" stop-color="rgba(0, 0, 255, 50%)" />
+        </radialGradient>
+      </defs>
+      <ellipse cx="100" cy="500" rx="40" ry="466" fill="url(#grad3)" />
+    </svg>
+
+    <!-- Bottom Eclipse -->
+    <svg height="100" width="500" xmlns="http://www.w3.org/2000/svg" class="bottom-eclipse">
+      <defs>
+        <radialGradient id="grad4" cx="50%" cy="50%" r="75%" fx="50%" fy="50%">
+          <stop offset="13%" stop-color="rgba(255, 255, 255, 0%)"/>
+          <stop offset="100%" stop-color="rgba(0, 0, 255, 50%)" />
+        </radialGradient>
+      </defs>
+      <ellipse cx="250" cy="100" rx="250" ry="50" fill="url(#grad4)" />
+    </svg>
+  </div>
+</ion-content>
+
+

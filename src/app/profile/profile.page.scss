@@ -1,0 +1,74 @@
+/* Profile Paragraph Style */
+.profileHeading{
+    text-align: start;
+    font-size: 20px;
+  }
+
+  /* Profile Icons Style */
+  .profileIcons{
+    width: 40px;
+    height: 40px;
+    margin-left: -50px;
+  }
+
+  /* Profile Background (Two Buttons) Style */
+  .profileBackgroundStyle{
+    background: linear-gradient(
+      180deg, 
+      rgb(0, 0, 255) 0%, 
+      rgb(255, 255, 255) 100%
+      );
+    margin-top: 25px;
+    border-radius: 15px;  
+    height:auto;
+    width: 390px;
+    margin-left: 20px;
+    box-shadow: 5px -10px 0px rgb(0, 0, 0, 0.25);
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+  }
+
+  /* Button Style */
+  ion-button{
+    text-align: center;
+    width: 300px;
+    height: 61px;
+    margin-left: 50px;
+    margin-top: 35px;
+  }
+
+  /* Card Style */
+  ion-card{
+    background: linear-gradient(
+        180deg,
+        rgb(151, 241, 251) 0%,
+        rgba(153, 227, 240, 67%) 50%,
+        rgba(158, 193, 205, 33%) 100%
+    );
+    border-radius: 20px;
+    box-shadow: 10px -5px 5px rgba(42, 230, 248, 75%);
+  }
+
+  /* Back Button Style */
+  #backBtn2{
+    font-size: 22px;
+    color:white;
+    --background:blue;
+    --background-activated:white;
+    --color-activated:black;
+  }
+
+  /* Log Out Button Style */
+  #logOutBtn2{
+    font-size: 22px;
+    color:black;
+    --background:white;
+    --background-activated:blue;
+    --color-hover: white;
+  }
+
+  /* Paragraph Style */
+  p{
+    color: black;
+  }

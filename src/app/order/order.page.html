@@ -1,0 +1,86 @@
+<ion-content [fullscreen]="true">
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title size="large"><img src="assets/ORE_SVG_Toolbar.svg" width="350" height="125" class="logo_ORE"/></ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <h1>Hello {{myName}}</h1>
+  <p>Would you like to buy something?</p>
+  <p>Click on the image to see the website.</p>
+  <p>Click on the button to add the item to your cart.</p>
+  <div>
+    <ion-card class="ionCardStyle" *ngFor="let cart of carts" style="text-align: center;">
+      <ion-card-header>
+        <!-- Title -->
+        <ion-card-title style="font-size: 22px;">{{ cart.title }}</ion-card-title>
+      </ion-card-header>
+      <hr style="border: 1px solid black">
+
+      <!-- Display the image with the correct source with a website inside-->
+       <!-- Webiste Link -->
+      <a href="{{cart.website}}">
+        <img [src]="cart.image" alt="{{ cart.title }}" style="margin: auto;"/><!-- Image -->
+      </a>
+      <ion-card-content style="color:white;">
+        <p style="font-size: 30px;"><b>Old Price:</b> €{{ cart.oldPrice }}</p><!-- Old Price -->
+         <p style="font-size: 30px;"><b>New Price:</b> €{{ cart.newPrice }}</p><!-- New Price -->
+      </ion-card-content>
+
+      <!-- Add To Cart Button: add price(new) to the Checkout Form-->
+      <ion-button shape="round" id="checkPriceBtn" (click)="addToCart(cart)">Add To Cart
+        <ion-icon name="add-outline" style="width:35px; height:35px;"></ion-icon>
+      </ion-button>
+    </ion-card>
+  </div>
+
+  <!-- Three Buttons: Profile, Emergency Contact, Log Out-->
+  <div class="threeButtons">
+    
+    <!-- Navigate to your profile -->
+    <ion-button [routerLink]="['/profile']" shape="round" id="profileBtn">My Profile
+
+      <!-- Icon for Profile -->
+      <ion-icon class="iconStyle2" name="person-outline" slot="end"></ion-icon>
+    </ion-button>
+
+    <!-- Navigate to your emergency contact -->
+    <ion-button [routerLink]="['/emergency-contact']" shape="round" id="ecBtn">Emergency Contact
+      <!--- Icon for Emergency Contact -->
+      <ion-icon class="iconStyle2" name="mail-outline" slot="end"></ion-icon>
+    </ion-button>
+
+    <!-- Log out from your account -->
+    <ion-button [routerLink]="['/loading']" shape="round" id="logoutBtn">Log Out
+      <!-- Icon for Log Out -->
+      <ion-icon class="iconStyle2" name="log-out-outline" slot="end"></ion-icon>
+    </ion-button>
+  </div>
+
+  <!-- Checkout Form -->
+  <div class="priceCheck">
+    <p style="font-size: 20px; margin-left: 20px;">€{{ totalPrice.toFixed(2) }}
+
+      <!-- Reset price back to zero (0) -->
+      <a style="margin-left: 70px;" (click)="resetTotal()" class="resetLink">Reset</a>
+
+      <!-- Navigate to the Payment Page-->
+      <a (click)="navigateToPayment()" style="margin-left: 75px; text-decoration: none;" class="paymentLink">Checkout</a>
+    </p>
+  </div>
+
+  <!-- Contact -->
+  <div id="bottomStyle">
+    <h2>Contact</h2>
+    <p>If you have any questions, email 
+    me to:</p>
+    <p>Email: G00419414&#64;atu.ie</p>
+    <p style="text-align: center;">OR</p>
+    <p style="text-align: center; text-decoration: underline; letter-spacing: 5px;"><b>Login On Social Media</b></p>
+
+    <!-- Social Media Icons -->
+    <ion-icon name="logo-instagram" (click)="onInstagram()" style="color:rgba(255, 0, 0, 0.5);"></ion-icon>
+    <ion-icon name="logo-facebook" (click)="onFacebook()" style="color:blue;"></ion-icon>
+    <ion-icon name="logo-github" (click)="onGitHub()" style="color:white"></ion-icon>
+  </div>
+</ion-content>

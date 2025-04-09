@@ -1,0 +1,113 @@
+/* Card Style */
+.ionCardStyle{
+    background: linear-gradient(
+  0deg, 
+  rgba(0, 0, 255, 0.5) 33%, 
+  rgba(125, 125, 255, 0.5) 67%, 
+  rgba(145, 145, 255, 0.5) 100%
+  );
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Div (Three Buttons) Style */
+.threeButtons{
+  margin-left:15px;
+  border-radius: 35px;
+  width:398px;
+  height: auto;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 255, 0.75) 0%,
+    rgba(0, 0, 255, 0.50) 25%,
+    rgba(255, 0, 0, 1) 50%,
+    rgba(255, 255, 255, 0.50) 75%,
+    rgba(255, 255, 255, 0.75) 100%
+  );
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* Profile Button Style */
+#profileBtn{
+  font-size: 22px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 15px;
+  width:311px;
+  height:62px;
+  margin-left: 50px;
+  --background: blue;
+  --background-activated: white;
+  --color-activated: blue;
+}
+
+/* Emergency Contact Button Style */
+#ecBtn{
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 75px;
+  width:311px;
+  height:62px;
+  margin-left: 50px;
+  --background: red;
+  --background-activated: white;
+  --color-activated: red;
+}
+
+/* Log Out Button Style */
+#logoutBtn{
+  font-size: 22px;
+  font-family: 'Times New Roman', Times, serif;
+  --color:black;
+  margin-top: 75px;
+  width:311px;
+  height:62px;
+  margin-left: 50px;
+  --background: white;
+  --background-activated: blue;
+  --color-activated: white;
+}
+
+/* Div Style */
+.priceCheck{
+  margin-top: 25px;
+  padding: 15px;
+  background: linear-gradient(
+    0deg,
+  #89DEFF 0%,
+  #528599 100%
+  );
+}
+
+/* Add a Cart Button Style */
+#checkPriceBtn{
+  font-size: 22px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 15px;
+  width:311px;
+  height:62px;
+  --background: #89DEFF;
+  --background-activated: white;
+  --color-activated: #528599;
+}
+
+/* Second Icon Style */
+.iconStyle2{
+  width: 30px;
+  height: 30px;
+}
+
+/* Reset Link Style */
+.resetLink{
+  color: white;
+}
+
+/* Reset Active Link Style */
+.resetLink:active{
+  color: blue;
+}
+
+/* Payment Active Link Style */
+.paymentLink:active{
+  color: white;
+}

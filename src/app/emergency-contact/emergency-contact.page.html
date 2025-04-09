@@ -1,0 +1,55 @@
+<ion-content [fullscreen]="true">
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title size="large"><img src="assets/ORE_SVG_Toolbar.svg" width="350" height="125" class="logo_ORE"/></ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <h1 style="text-align: center;">What's wrong with your device?</h1>
+
+  <!-- Emergency Contact Form -->
+  <div class="styleInput" (change)="formEC()">
+
+    <!-- Name -->
+    <ion-input [(ngModel)]="name" label="Name" labelPlacement="floating" fill="outline" placeholder="Enter your name"></ion-input><br>
+    
+    <!-- Email -->
+    <ion-input [(ngModel)]="email" label="Email" labelPlacement="floating" fill="outline" placeholder="Enter your email"></ion-input><br>
+    
+    <!-- Phone Number -->
+    <ion-input [(ngModel)]="phoneNo" label="Phone No." labelPlacement="floating" fill="outline" placeholder="Enter your phone number"></ion-input><br>
+    
+    <!-- Explanation about your device. Eg. What's the problem, how to fix it & how to find a repair store -->
+    <ion-textarea  [(ngModel)]="explain" label="Explanation" labelPlacement="floating" fill="outline" 
+    placeholder="Enter your explanation" id="squareStyle" [autoGrow]="true" [clearOnEdit]="true"></ion-textarea>
+  </div><br>
+
+  <div id="twoButtons">
+
+    <!-- Navigate back to Order Page -->
+    <br><ion-button shape="round" class="backButton" [routerLink]="['/order']">
+      <!-- Icon for Back Button -->
+      <ion-icon name="arrow-back-outline" slot="start" style="margin-left: -50px;" class="buttonWithIcon"></ion-icon>
+      Back
+    </ion-button>
+
+    <!-- Submit (send) Button -->
+    <ion-button [disabled]="disabledECBtn" shape="round" class="submitButton" (click)="submitEmergencyContact()">
+      <!-- Icon for Submit Button -->
+      <ion-icon name="send-outline" slot="start" style="margin-left: -50px;" class="buttonWithIcon"></ion-icon>
+      Submit</ion-button>
+  </div>
+
+  <!-- Contact -->
+  <div id="bottomStyle">
+    <h2>Contact</h2>
+    <p>If you have any questions, email 
+    me to:</p>
+    <p>Email: G00419414&#64;atu.ie</p>
+
+    <!-- Icons of Social Media -->
+    <ion-icon name="logo-instagram" (click)="onInstagram()" style="color:rgba(255, 0, 0, 0.5);"></ion-icon>
+      <ion-icon name="logo-facebook" (click)="onFacebook()" style="color:blue;"></ion-icon>
+    <ion-icon name="logo-github" (click)="onGitHub()" style="color:white"></ion-icon>
+    </div>
+</ion-content>

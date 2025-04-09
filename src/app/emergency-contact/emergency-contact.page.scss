@@ -1,0 +1,60 @@
+
+/* Image Style */
+img{
+    margin-left: 30px;
+  }
+
+/* Input Style */
+ion-input{
+  font-size: 18px;
+  height: auto;
+  width: 300px;
+}
+
+/* Textarea Style */
+ion-textarea{
+  font-size: 25px;
+  width: 300px;
+}
+
+/* Input */
+.styleInput{
+    color: white;
+    margin-left: 75px;
+}
+
+/* Back Button Style */
+.backButton{
+  width: 165px;
+  height: 75px;
+  font-size: 18px;
+  margin-left: 44px;
+  --color: black;
+  --background: white;
+  --backgrounf-activated: blue;
+  --color-activated: white;
+}
+
+/* Div Style */
+#twoButtons{
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+
+/* Submit Button Style */
+.submitButton{
+  width: 165px;
+  height: 75px;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+/* Explanation Textarea Style */
+#squareStyle{
+  border-radius: 30px;
+  text-indent: 25px;
+  margin-top: 15px;
+  background: linear-gradient(0deg, #F63F3F 0%, #DB8484 54%, #DF9A9A 94%);
+  height: auto;
+}

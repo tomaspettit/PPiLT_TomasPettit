@@ -1,0 +1,39 @@
+
+<svg width="525" height="290" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="300" fill="#5DACFB"/>
+
+  <!-- Letter O as a power button -->
+  <g>
+    <circle cx="100" cy="150" r="70" fill="#007acc"/>
+    <line x1="100" y1="90" x2="100" y2="140" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <!-- Letter R as a wrench -->
+  <g>
+    <path d="M200,80 L240,120 L220,140 L260,180 L240,200 L200,160 Z" fill="#e66465"/>
+    <circle cx="220" cy="140" r="8" fill="#ffffff"/>
+    <circle cx="240" cy="160" r="8" fill="#ffffff"/>
+  </g>
+
+  <!-- Letter E as a gadget -->
+  <g>
+    <rect x="320" y="80" width="100" height="140" rx="15" ry="15" fill="#34a853"/>
+    <circle cx="370" cy="150" r="35" fill="#ffffff"/>
+  </g>
+
+  <!-- Subtitle -->
+  <text x="270" y="270" font-family="Arial, sans-serif" font-size="30" fill="#333333" text-anchor="middle">
+    Order it • Repair it • Enjoy it
+  </text>
+
+  <!-- Icons for Software, Technology, Gadget -->
+  <g fill="#555555">
+    <!-- Software icon -->
+    <rect x="450" y="50" width="40" height="40" rx="5" ry="5"/>
+    <!-- Technology icon -->
+    <circle cx="470" cy="120" r="20"/>
+    <!-- Gadget icon -->
+    <polygon points="450,170 470,210 490,170" />
+  </g>
+</svg>

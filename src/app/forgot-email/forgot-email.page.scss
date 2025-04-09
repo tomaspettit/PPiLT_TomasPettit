@@ -1,0 +1,38 @@
+/* Forgot Email Input Style */
+.feInput{
+    margin-left: 32px;
+    margin-top: 70px;
+    width: 360px;
+    height: 75px;
+    font-size: 25px;
+  }
+
+
+  /* Div Forgot Email Background Style */
+  .feBackgroundStyle{
+    margin-top: 100px;
+    background: linear-gradient(
+      180deg, 
+      rgb(0, 0, 255) 0%, 
+      rgb(255, 255, 255) 100%
+      );
+    border-radius: 15px;  
+    height:auto;
+    width: 360px;
+    margin-left: 35px;
+    box-shadow: 5px -10px 0px rgb(0, 0, 0, 0.25);
+    padding: 15px;
+  }
+
+  /* Forgot Password Link Style */
+  #forgotPasswordLink{
+    text-decoration: none;
+    margin-left: 60px;
+    font-size: 30px;
+    color: white;
+  }
+
+  /* Forgot Password Link Hover Style */
+  #forgotPasswordLink:active{
+    color: rgb(44, 197, 248);
+  }
