@@ -50,7 +50,7 @@ export class EmergencyContactPage implements OnInit{
     this.myName = await this.storage.get('name');
     this.myEmail = await this.storage.get('email');
     this.myPhoneNo = await this.storage.get('phone');
-    console.log(this.myName + " " + this.myEmail + " " + this.myPhoneNo);
+    console.log("Emergency Contact: " + this.myName + " " + this.myEmail + " " + this.myPhoneNo);
   }
 
   // Check if all the inputs has been placed, that way the Submit (send) Button will no longer disable

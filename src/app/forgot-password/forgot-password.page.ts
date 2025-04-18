@@ -46,7 +46,7 @@ export class ForgotPasswordPage implements OnInit {
   async ionViewWillEnter(){
     this.myEmail = await this.storage.get('email');
     this.myPassword = await this.storage.get('password');
-    console.log(this.myEmail + " " + this.myPassword);
+    console.log("Forgot Password: " + this.myEmail + " " + this.myPassword);
   }
 
   // Check if all the inputs has been placed, that way the Sign Up Button will no longer disable
